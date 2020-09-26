@@ -1,30 +1,31 @@
 ---
 template: HomePage
 slug: ''
-title: Yellowcake
+title: Mo Irrigation Systems
 featuredImage: 'https://ucarecdn.com/159203d3-881d-4218-baa1-ca4427b48d0d/'
-subtitle: ' Welcome to the ultimate Gatsby and Netlify starter project.'
+subtitle: 'The best and most trusted irrigation system services in Montreal and surroundings'
+video: 'https://res.cloudinary.com/milligrvm/video/upload/v1601153497/mo-irrig-video_viac6s.mp4'
+videoPoster: 'https://res.cloudinary.com/milligrvm/image/upload/v1601151988/mo_hero_thumb.png'
+videoTitle: 'The Most Trusted'
+videoTitle2: 'Irrigation System Services'
+videoTitle3: 'in town'
+videoSubtitle: 'The best and most trusted irrigation system services in Montreal and surroundings'
 meta:
-  description: This is a meta description.
-  title: The Ultimate Gatsby Starter
+  description: Mo Irrigation Systems
+  title: Mo Irrigation Systems
 ---
 
-Yellowcake is an opinionated starter project created by [Thrive Digital](https://thriveweb.com.au/) a [Gold Coast Web Design](https://thriveweb.com.au/) studio. to help you create lightning fast websites with [Gatsby](https://gatsbyjs.org) and [Netlify CMS](https://netlifycms.org).
+Mo Irrigation Systems is committed to helping our customers and all community members conserve water with the latest technology and science available. We research available products and make recommendations based on real world use, maintenance and reliability. For 20 years our customers have trusted us to help guide them into the best products for their situations and we are still the ones to trust when looking for advice or information regarding conservation products and issues.
 
-View the [project overview](https://thriveweb.com.au/the-lab/yellowcake-gatsby-react-js-starter-project/) and the [docs](https://github.com/thriveweb/yellowcake/blob/master/README.md).
+# Services
 
-# Features
+- **[Residential](#)** 
+- **[Industrial](#)** 
+- **[Installation](#)** 
+- **[Repair & Maintenance](#)** 
+- **[Evaluation](#)** 
 
-- **[Gatsby](https://gatsbyjs.org)** static site generator
-- **[Netlify CMS](https://github.com/netlify/netlify-cms)** for content management
-- Dynamic menus and forms
-- **[Mailchimp](http://mailchimp.com)** and **[Uploadcare](https://uploadcare.com)** integrations
-- Fully responsive layout for mobile and widescreen browsing
-- Blog searching and paging functionality
-- Seamless image and content sliders
+## Get a FREE quote today
 
-## Get started
+Head to our **[contact page](#)** or simply give us a **[call now](tel:15145555555)**.
 
-View the [Netlify CMS Docs](https://www.netlifycms.org/docs/) and the [Netlify CMS Repo](https://github.com/netlify/netlify-cms).
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/thriveweb/yellowcake&stack=cms)

@@ -40,6 +40,7 @@ class BackgroundVideo extends Component {
 
   render() {
     const { poster, videoTitle, children } = this.props
+    console.log(this.props)
     return (
       <Fragment>
         {!this.state.mobileWidth && (
@@ -59,14 +60,17 @@ class BackgroundVideo extends Component {
               {children}
             </video>
             {videoTitle && (
-              <div className="BackgroundVideo--videoTitle">{videoTitle}</div>
+              <Fragment>
+                <div className="BackgroundVideo--videoTitle">{videoTitle}<br/>Irrigation System Services</div>
+              </Fragment>
+              
             )}
           </div>
         )}
         {this.state.mobileWidth && (
-          <Fragment>
-            <Image background src={poster} alt="Background poster" />
-            {videoTitle && <h3 className="Poster--videoTitle">{videoTitle}</h3>}
+          <Fragment className={"BackgroundPoster"}>
+            <Image background src={poster} alt="Background poster" className={"BackgroundPoster"}/>
+            {videoTitle && <h3 className="Poster--videoTitle">{videoTitle}<br/>Irrigation System Services</h3>}
           </Fragment>
         )}
       </Fragment>
