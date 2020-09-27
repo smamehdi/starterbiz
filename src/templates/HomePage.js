@@ -1,19 +1,25 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 
-import PageHeader from '../components/PageHeader'
+// import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
+import BackgroundVideo from '../components/BackgroundVideo'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
+export const HomePageTemplate = ({ title, subtitle, featuredImage, body, videoPoster, videoTitle, videoTitle2, videoTitle3, video }) => (
   <main className="Home">
-    <PageHeader
+     <section className="BackgroundVideo-section section">
+      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle} videoTitle2={videoTitle2} videoTitle3={videoTitle3}>
+        {video && <source src={video} type="video/mp4" />}
+      </BackgroundVideo>
+    </section>
+    {/* <PageHeader
       large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
-    />
+    /> */}
 
     <section className="section">
       <div className="container">
@@ -45,6 +51,9 @@ export const pageQuery = graphql`
         title
         subtitle
         featuredImage
+        video
+        videoPoster
+        videoTitle
       }
     }
   }

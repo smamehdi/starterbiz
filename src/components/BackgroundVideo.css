@@ -1,7 +1,7 @@
 .BackgroundVideo-section {
   position: relative;
   overflow: hidden;
-  height: 40rem;
+  height: 75rem;
 }
 .BackgroundVideo {
   display: block;
@@ -22,8 +22,10 @@
 .BackgroundVideo--video {
   transition: all 0.2s ease;
   opacity: 0;
+  text-shadow: 1px 1px 1px grey;filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
 }
 .BackgroundVideo--video.playing {
+  filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
   opacity: 1;
 }
 
@@ -38,6 +40,8 @@
   text-align: center;
   color: white;
   text-shadow: 1px 1px 1px grey;
+  /* box-shadow: 0 0 0 999em rgba(0,0,0,0.8); */
+  padding-left: 3rem;
 }
 
 .Poster--videoTitle {
@@ -45,10 +49,15 @@
   top: 50%;
   left: 0;
   transform: translate(0, -50%);
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: bold;
   width: 100%;
   text-align: center;
   color: white;
-  text-shadow: 1px 1px 1px grey;
+  text-shadow: 1px 1px 1px rgb(80, 77, 77);
+  filter: brightness(200%) ;
+}
+
+.BackgroundPoster {
+  text-shadow: 1px 1px 1px grey;filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
 }
