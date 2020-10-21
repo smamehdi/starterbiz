@@ -69,6 +69,24 @@ h6 {
   margin-bottom: 0.5em;
 }
 
+.secondary h1,
+.secondary h2,
+.secondary h3,
+.secondary h4,
+.secondary h5,
+.secondary h6 {
+  color: #00c2bd
+}
+
+
+.bright h1,
+.bright h2,
+.bright h3,
+.bright h4,
+.bright h5,
+.bright h6 {
+  color: #FFF
+}
 pre {
   background: var(--lightGrey);
   line-height: 1.45;
@@ -137,6 +155,19 @@ blockquote {
 .taCenter {
   text-align: center;
 }
+
+.taCenter.highfooter {
+  margin: 0px;
+  padding: 20px;
+  background: #e0d170;
+  color: white;
+}
+
+.taCenter.highfooter a {
+  color: #00c2bd;
+  text-decoration: none;
+}
+
 .taLeft {
   text-align: left;
 }
@@ -154,7 +185,8 @@ blockquote {
 
 .section {
   width: 100%;
-  padding: 5rem 0;
+  padding: 6rem 10rem;
+  padding-bottom: 8rem;
   border-bottom: 1px solid #f1f1f1;
 }
 .section:last-child {
@@ -169,7 +201,28 @@ blockquote {
 .section.noPadding {
   padding: 0;
 }
+.section.inverse {
+  position: relative;
+}
+.section.inverse:before {
+  content: "";
+  background-image: url(https://res.cloudinary.com/milligrvm/image/upload/v1601176821/sharon-mccutcheon-igBvG1AKTY8-unsplash_hargit.jpg);
+  background-color: #00c2bd;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  color: #ffffff !important; 
+  filter: hue-rotate(45deg) brightness(80%) grayscale(10%);
+}
+.section.inverse > div > div > p > strong > a {
+  color: #e0d170 !important; 
+  text-decoration-line : none;
+}
+.section.plant {
+  background: url(https://res.cloudinary.com/milligrvm/image/upload/v1601178573/section-bg-whitenplant.jpg) no-repeat right center;
+  background-size: auto;
 
+}
 @media (max-width: 600px) {
   .section {
     width: 100%;
@@ -190,6 +243,9 @@ blockquote {
 }
 .container.skinny {
   max-width: 888px;
+}
+.container.skinny.inside {
+  position: relative;
 }
 .container.skinnier {
   max-width: 555px;

@@ -5,12 +5,13 @@ import { graphql } from 'gatsby'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 import BackgroundVideo from '../components/BackgroundVideo'
+import Gallery from '../components/Gallery'
 
 // Export Template for use in CMS preview
-export const HomePageTemplate = ({ title, subtitle, featuredImage, body, videoPoster, videoTitle, videoTitle2, videoTitle3, video }) => (
+export const HomePageTemplate = ({ title, subtitle, featuredImage, body, videoPoster, videoTitle, video, gallery }) => (
   <main className="Home">
      <section className="BackgroundVideo-section section">
-      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle} videoTitle2={videoTitle2} videoTitle3={videoTitle3}>
+      <BackgroundVideo poster={videoPoster} videoTitle={videoTitle} >
         {video && <source src={video} type="video/mp4" />}
       </BackgroundVideo>
     </section>
@@ -20,12 +21,19 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body, videoPo
       subtitle={subtitle}
       backgroundImage={featuredImage}
     /> */}
-
-    <section className="section">
-      <div className="container">
+    <section className="section fade-in-section">
+      <div className="container" >
+        <h2 className="secondary" style={{fontSize:"4rem", textAlign:"center"}}>Our Company</h2>
         <Content source={body} />
       </div>
     </section>
+    <section className="section inverse fade-in-section">
+      <div className="container skinny inside " style={{textAlign:"center"}}>
+        <h2 className={"bright"} style={{fontSize:"4rem", color:"#ffffff"}}>Our Services</h2>
+        <Gallery images={gallery} />
+      </div>
+    </section>
+
   </main>
 )
 
@@ -46,6 +54,7 @@ export const pageQuery = graphql`
   query HomePage($id: String!) {
     page: markdownRemark(id: { eq: $id }) {
       ...Meta
+      ...Gallery
       html
       frontmatter {
         title
@@ -54,6 +63,10 @@ export const pageQuery = graphql`
         video
         videoPoster
         videoTitle
+        accordion {
+          title
+          description
+        }
       }
     }
   }

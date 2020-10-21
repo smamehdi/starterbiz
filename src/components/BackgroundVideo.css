@@ -22,7 +22,8 @@
 .BackgroundVideo--video {
   transition: all 0.2s ease;
   opacity: 0;
-  text-shadow: 1px 1px 1px grey;filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
+  text-shadow: 1px 1px 1px grey;
+  filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
 }
 .BackgroundVideo--video.playing {
   filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
@@ -59,5 +60,6 @@
 }
 
 .BackgroundPoster {
-  text-shadow: 1px 1px 1px grey;filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
+  text-shadow: 1px 1px 1px grey;
+  filter: hue-rotate(50deg) brightness(50%) grayscale(50%);
 }

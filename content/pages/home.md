@@ -7,9 +7,17 @@ subtitle: 'The best and most trusted irrigation system services in Montreal and 
 video: 'https://res.cloudinary.com/milligrvm/video/upload/v1601153497/mo-irrig-video_viac6s.mp4'
 videoPoster: 'https://res.cloudinary.com/milligrvm/image/upload/v1601151988/mo_hero_thumb.png'
 videoTitle: 'The Most Trusted'
-videoTitle2: 'Irrigation System Services'
-videoTitle3: 'in town'
 videoSubtitle: 'The best and most trusted irrigation system services in Montreal and surroundings'
+gallery:
+  - alt: RESIDENTIAL
+    image: 'https://res.cloudinary.com/milligrvm/image/upload/v1601167602/mo-service-residential_bjtilj.jpg'
+    title: RESIDENTIAL
+  - alt: INDUSTRIAL
+    image: 'https://res.cloudinary.com/milligrvm/image/upload/v1601167602/mo-service-industrial_tjsfaz.jpg'
+    title: INDUSTRIAL
+  - alt: MAINTENANCE
+    image: 'https://res.cloudinary.com/milligrvm/image/upload/v1601167603/mo-service-maintenance_sbrfrn.jpg'
+    title: MAINTENANCE
 meta:
   description: Mo Irrigation Systems
   title: Mo Irrigation Systems
@@ -17,13 +25,13 @@ meta:
 
 Mo Irrigation Systems is committed to helping our customers and all community members conserve water with the latest technology and science available. We research available products and make recommendations based on real world use, maintenance and reliability. For 20 years our customers have trusted us to help guide them into the best products for their situations and we are still the ones to trust when looking for advice or information regarding conservation products and issues.
 
-# Services
+<!-- # Services
 
 - **[Residential](#)** 
 - **[Industrial](#)** 
 - **[Installation](#)** 
 - **[Repair & Maintenance](#)** 
-- **[Evaluation](#)** 
+- **[Evaluation](#)**  -->
 
 ## Get a FREE quote today
 
